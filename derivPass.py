@@ -79,7 +79,7 @@ def main(arguments):
     fi = "tmp_derivPass.txt"
 
     with codecs.open(fi, 'a', 'utf-8') as f:
-        deriv(args.input, args.input, init(), 0, f)
+        deriv(args.input.lower(), args.input, init(), 0, f)
     with codecs.open(fi, 'r', 'utf-8') as f:
         s = SetSupDoublons(f)
 
